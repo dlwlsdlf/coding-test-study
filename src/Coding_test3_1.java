@@ -20,20 +20,22 @@ public class Coding_test3_1 {
 		
 		Arrays.sort(arr);// Array.sort(배열이름) > 배열 오름 차순으로
 		
-		int first = arr[N-1]; 
-		int second = arr[N-2];
+		int first = arr[N-1]; //배열에서 가장큰수
+		int second = arr[N-2]; // 배열에서 두번째로 큰수
 		int result = 0;
 		
 		int count = 0;
 		
 		
-		while (count < M) {
+		while (true) {
 			for (int i = 0; i < K; i++) {
-				result += first;
-				count +=1;
+				
+				
 				if (M==count) {
 					break;
 				}
+				result += first;
+				count +=1;
 			}
 			if (M==count) {
 				break;
