@@ -32,12 +32,12 @@ public class UDLR {
 				if (plan ==moveTypes[j]) {
 					nx = x + dx[j];
 					ny = y + dy[j];
-					System.out.println(nx+" "+ny);
+	//				System.out.println(nx+" "+ny);
 				}
 			}
 			//공간을 벗어나는 경우 무시
 			if (nx < 1 || ny< 1 || nx > n|| ny > n) {
-				System.out.println("X"+nx+" "+ny);
+//				System.out.println("X"+nx+" "+ny);
 				continue;
 			}
 			x = nx;
